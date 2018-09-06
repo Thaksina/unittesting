@@ -9,7 +9,7 @@ class Testing(unittest.TestCase):
         self.assertEqual(1, count_unique(list))
 
     def test_typical_cases(self):
-        list = ["d","f","i","s"]
+        list = ["d","f","i"]
         self.assertEqual(3, count_unique(list))
 
     def test_impossible_cases(self):
