@@ -14,8 +14,10 @@ class Testing(unittest.TestCase):
 
     def test_impossible_cases(self):
         list = [None]
-        self.assertEqual(1, count_unique(list))
+        self.assertEqual(0, count_unique(list))
 
     def test_extreme_cases(self):
-        list = ["a"]
+        list = []
+        for i in range (0,100000):
+            list.append(1)
         self.assertEqual(1, count_unique(list))
