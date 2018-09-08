@@ -1,7 +1,6 @@
 import unittest
 from listunit import count_unique
 
-
 class Testing(unittest.TestCase):
 
     def test_borderline_case(self):
