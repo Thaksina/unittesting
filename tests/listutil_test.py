@@ -1,6 +1,6 @@
 import unittest
 from listunit import count_unique
-from listunit import binarysearch
+from listunit import binary_search
 
 class Testing(unittest.TestCase):
 
@@ -23,11 +23,11 @@ class Testing(unittest.TestCase):
         self.assertEqual(1, count_unique(list))
 
     def test_findIndexof(self):
-        self.assertEqual(binarysearch(['a','b','c'],'c'), 2)
+        self.assertEqual(binary_search(['a','b','c'],'c'), 2)
 
 
     def test_NoneElemant(self):
-        self.assertEqual(binarysearch(['a','b','c'],None), -1)
+        self.assertEqual(binary_search(['a','b','c'],None), -1)
 
     def test_NotFindElement(self):
-        self.assertEqual(binarysearch(['a','s','g'],'w'), -1)
+        self.assertEqual(binary_search(['a','s','g'],'w'), -1)

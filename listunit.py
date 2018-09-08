@@ -23,7 +23,7 @@ def count_unique(list):
     return len(newlist)
 
 
-def binarysearch(list,element):
+def binary_search(list,element):
     """
     >>> binary_search(["a","b","c",],"b")
     1
