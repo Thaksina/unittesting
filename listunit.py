@@ -25,6 +25,10 @@ def count_unique(list):
 
 def binary_search(list,element):
     """
+    It's return the index of element that we want to find in the list
+    The list contain many different element
+    if element not found in list , it return -1
+
     >>> binary_search(["a","b","c",],"b")
     1
     >>> binary_search(["a","b"],"c")
@@ -32,9 +36,9 @@ def binary_search(list,element):
     >>> binary_search(["a","b"],None)
     -1
 
-    :param list:
-    :param element:
-    :return: index
+    :param list: list of elements
+    :param element: element we want to find in the list
+    :return: index of the element
     """
     checklist = []
     index = 0
